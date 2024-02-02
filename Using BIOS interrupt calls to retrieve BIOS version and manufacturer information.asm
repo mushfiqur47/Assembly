@@ -29,7 +29,7 @@ _start:
 
 
     ;We use BIOS interrupt calls (int 0x10) to retrieve the BIOS version and manufacturer information.
-    The specific function numbers (0x1300 and 0x1500) are used for accessing these details. However, these function numbers may vary across different BIOS implementations.
+    ;The specific function numbers (0x1300 and 0x1500) are used for accessing these details. However, these function numbers may vary across different BIOS implementations.
     We store the retrieved information in buffers (version_buffer and manufacturer_buffer) and then can further process or print them.
 
 Remember, accessing hardware details at such a low level is highly platform-dependent and may not be feasible or reliable on all systems. For practical purposes, accessing detailed motherboard information is better achieved using higher-level programming languages or system utilities provided by the operating system.
