@@ -85,3 +85,7 @@ _start:
 
 section .data
     ten dd 10
+
+
+
+;This program takes a number as input, calculates its factorial, and then prints the result. It uses basic input/output operations and integer arithmetic in assembly language.
