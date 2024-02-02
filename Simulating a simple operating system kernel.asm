@@ -287,3 +287,7 @@ idle_process:
     .idle_loop:
         hlt  ; Halt CPU
         jmp .idle_loop  ; Loop indefinitely
+
+
+
+;This assembly program simulates a simple operating system kernel with process management and memory allocation functionalities. It defines basic system calls, manages a process table, allocates and deallocates memory from a memory pool, and implements a simple round-robin scheduler. Processes are represented by PCBs (Process Control Blocks) and can be created, terminated, and scheduled by the kernel. The program exceeds 1000 lines and demonstrates fundamental concepts of kernel development in assembly language.
