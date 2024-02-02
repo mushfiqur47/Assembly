@@ -200,3 +200,9 @@ section .data
     room_options_len equ $ - room_options
     ; Define player input buffer
     player_input resb 1
+
+
+
+
+
+;This program simulates a text-based adventure game where the player navigates through different rooms, encounters enemies, and collects treasures. The player's goal is to reach the final room while managing their health and making strategic decisions. The game responds to player input and updates the game state accordingly.
