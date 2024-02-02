@@ -17,3 +17,11 @@ _start:
     mov eax, 1          ; syscall number for sys_exit
     xor ebx, ebx        ; exit code 0
     int 0x80            ; call kernel
+
+
+
+
+;To assemble and run this program, you'll need NASM installed on your system. Save the code in a file (e.g., hello.asm) and then run the following commands:nasm -f elf hello.asm
+ld -m elf_i386 -s -o hello hello.o
+./hello
+
