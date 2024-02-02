@@ -29,3 +29,11 @@ _start:
     mov eax, 1          ; syscall number for sys_exit
     xor ebx, ebx        ; exit code 0
     int 0x80            ; call kernel
+
+
+    We use the uname syscall to retrieve system information, including CPU information.
+    The CPU information is stored in the buffer.
+    We print the "Processor Information: " string followed by the CPU information retrieved by the uname syscall.
+    Finally, we exit the program.
+
+Please note that the information returned by the uname syscall might not include detailed CPU specifications such as model name, speed, cache sizes, etc. For accessing more detailed CPU information, you would typically use higher-level programming languages or utilities provided by the operating system or hardware abstraction layers.
