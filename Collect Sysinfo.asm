@@ -35,10 +35,10 @@ success:
 
 
    ; We reserve space for the sysinfo struct using the resb directive. The sysinfo struct contains various system information such as uptime, load averages, total RAM, free RAM, etc.
-  ;  We set up the registers with the appropriate values for the sysinfo syscall (eax for the syscall number, edi for the pointer to the sysinfo struct).
-    We make the syscall using int 0x80.
-    We check for errors by examining the return value in eax. If there is an error, we handle it accordingly.
-    If the syscall succeeds, we can access the system information stored in the sysinfo_struct.
-    Finally, we exit the program.
+   ; We set up the registers with the appropriate values for the sysinfo syscall (eax for the syscall number, edi for the pointer to the sysinfo struct).
+   ; We make the syscall using int 0x80.
+   ; We check for errors by examining the return value in eax. If there is an error, we handle it accordingly.
+   ;If the syscall succeeds, we can access the system information stored in the sysinfo_struct.
+   ;Finally, we exit the program.
 
-Please note that accessing specific fields in the sysinfo struct requires knowledge of its layout, which may vary depending on the system architecture and kernel version. The example provided accesses the uptime field, but you can access other fields as needed.
+   ;Please note that accessing specific fields in the sysinfo struct requires knowledge of its layout, which may vary depending on the system architecture and kernel version. The example provided accesses the uptime field, but you can access other fields as needed.
