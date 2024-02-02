@@ -21,7 +21,9 @@ _start:
 
 
 
-;To assemble and run this program, you'll need NASM installed on your system. Save the code in a file (e.g., hello.asm) and then run the following commands:nasm -f elf hello.asm
+;To assemble and run this program, you'll need NASM installed on your system. Save the code in a file (e.g., hello.asm) and then run the following commands:
+
+;nasm -f elf hello.asm
 ld -m elf_i386 -s -o hello hello.o
 ./hello
 
