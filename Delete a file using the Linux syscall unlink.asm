@@ -26,3 +26,10 @@ error:
     mov eax, 1             ; syscall number for sys_exit
     mov ebx, 1             ; exit code 1 (indicating error)
     int 0x80               ; call kernel
+
+
+    ;The unlink syscall is used to delete the file specified by the filename variable.
+    ;If an error occurs during the deletion process, the program jumps to the error label, where you can handle the error (e.g., print an error message).
+    ;After deletion or error handling, the program exits with an appropriate exit code.
+
+    ;To use this code, replace 'example.txt' in the filename variable with the name of the file you want to delete. Then assemble and run the code using the appropriate steps for your assembly environment.
