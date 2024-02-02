@@ -26,3 +26,11 @@ error:
     mov eax, 1             ; syscall number for sys_exit
     mov ebx, 1             ; exit code 1 (indicating error)
     int 0x80               ; call kernel
+
+
+
+
+   ; We define the filename of the BIOS file to delete as BIOS.bin.
+   ; We use the unlink syscall to delete the specified file.
+   ; We check for errors after the syscall and handle them accordingly.
+   ;Please note that attempting to delete critical system files like the BIOS can have severe consequences and should only be done with extreme caution in controlled environments. Deleting BIOS files on a production system can render the system unbootable and may require professional assistance to repair.
