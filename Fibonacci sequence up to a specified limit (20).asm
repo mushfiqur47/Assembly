@@ -60,3 +60,7 @@ print_result:
     mov eax, 1          ; System call for sys_exit
     xor ebx, ebx        ; Exit code 0
     int 0x80            ; Make system call
+
+
+
+;generates the Fibonacci sequence up to a specified limit (20 in this case) and then calculates the sum of all even numbers in that sequence. Finally, it prints out the result.
