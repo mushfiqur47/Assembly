@@ -64,3 +64,7 @@ section .data
 
     equal_msg db 'var1 is equal to var2', 0xA
     equal_len equ $ - equal_msg
+
+
+
+;This code demonstrates conditional branching using the CMP (compare) and Jxx (jump if) instructions: compares the values of var1 and var2 and then takes different actions based on the result of the comparison. If var1 is greater than var2, it prints a message indicating so. If var1 is less than var2, it prints a different message. If var1 is equal to var2, it prints yet another message. Finally, the program exits. This demonstrates basic decision-making in assembly language using conditional branching.
