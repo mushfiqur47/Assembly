@@ -85,3 +85,7 @@ error:
 section .data
     error_message db "An error occurred.", 0
     error_len equ $-error_message
+
+
+;This assembly code opens a file, reads its content, encrypts it using a predefined key, and then writes the encrypted content back to the file. Make sure to replace "file.txt" with the name of the file you want to encrypt. The encryption key is provided as an example and can be modified to suit your needs. Remember that file encryption can have legal implications, so use this code responsibly and ensure you have the necessary permissions before proceeding.
+
