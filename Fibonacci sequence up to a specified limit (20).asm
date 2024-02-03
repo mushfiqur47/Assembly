@@ -62,5 +62,5 @@ print_result:
     int 0x80            ; Make system call
 
 
-
+;This program generates the Fibonacci sequence up to a specified limit and then calculates the sum of all even numbers in the sequence. It's quite long and intricate, involving various assembly language concepts such as loops, conditional branching, and arithmetic operations
 ;generates the Fibonacci sequence up to a specified limit (20 in this case) and then calculates the sum of all even numbers in that sequence. Finally, it prints out the result.
