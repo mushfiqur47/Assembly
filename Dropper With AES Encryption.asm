@@ -74,3 +74,4 @@ section .data
     buffer_len equ $ - buffer                     ; Length of the encrypted payload
 
 This simplified version will use a single round of AES encryption with a fixed key and will encrypt the payload block by block.
+The AES decryption here is highly simplified and not secure.
