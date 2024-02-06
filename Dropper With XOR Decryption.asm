@@ -68,3 +68,6 @@ exit_program:
 section .data
     buffer db 0x43, 0x55, 0x55, 0x0A, 0x21, 0x0F ; Example encrypted payload
     buffer_len equ $ - buffer                     ; Length of the encrypted payload
+
+
+ ;a simple XOR decryption routine to decrypt the payload before executing it. Please note that this decryption method is for demonstration purposes only and is not secure. In a real-world scenario, you would use a secure encryption algorithm and key to encrypt and decrypt the payload. Additionally, I've also added a placeholder for the encrypted payload in the .data section.
